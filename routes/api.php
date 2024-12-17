@@ -7,12 +7,6 @@ use App\Models\User;
 
 Route::apiResource('/categories', CategoryApiController::class);
 
-// Route::get('/categories', [CategoryApiController::class, 'index']);
-// Route::post('/categories', [CategoryApiController::class, 'store']);
-// Route::get('/categories/{id}', [CategoryApiController::class, 'show']);
-// Route::put('/categories/{id}', [CategoryApiController::class, 'update']);
-// Route::delete('/categories/{id}', [CategoryApiController::class, 'destroy']);
-
 Route::post("/login", function (Request $request) {
     $email = $request->email;
     $password = $request->password;
